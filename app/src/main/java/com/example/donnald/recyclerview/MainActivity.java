@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         logo = new int[] {
                 R.drawable.cupcake,
                 R.drawable.donut,
+                R.drawable.eclair,
                 R.drawable.froyo,
                 R.drawable.gingerbread,
                 R.drawable.honeycomb,
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         rvAndroidVersions.setLayoutManager(layoutManager);
         rvAndroidVersions.setHasFixedSize(true);
 
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < codename.length; i++) {
            list.add(new AndroidVersion(logo[i], codename[i], version[i], api[i], date[i]));
         }
         adapter = new CustomAdapter(list);

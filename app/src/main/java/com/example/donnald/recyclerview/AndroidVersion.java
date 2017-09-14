@@ -27,7 +27,6 @@ public class AndroidVersion {
     public String getCodename() {
         return codename;
     }
-
     public void setCodename(String codename) {
         this.codename = codename;
     }
